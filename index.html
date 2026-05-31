@@ -1,150 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afeez Awofeso Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Portfolio of Afeez Awofeso, Graduate Software Engineer based in London. Projects in AI, full-stack web development, Flask, Django and embedded systems.">
+  <meta name="author" content="Afeez Awofeso">
+  <link rel="canonical" href="https://afeez-portfolio.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://afeez-portfolio.vercel.app/">
+  <meta property="og:title" content="Afeez Awofeso | Graduate Software Engineer">
+  <meta property="og:description" content="Graduate Software Engineer in London. Full-stack web apps, AI-powered tools, Flask, healthcare software and embedded systems.">
+  <meta property="og:image" content="https://afeez-portfolio.vercel.app/images/me-nobg.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Afeez Awofeso | Graduate Software Engineer">
+  <meta name="twitter:description" content="Graduate Software Engineer in London. Full-stack web apps, AI-powered tools, Flask, healthcare software and embedded systems.">
+  <meta name="twitter:image" content="https://afeez-portfolio.vercel.app/images/me-nobg.png">
+  <title>Afeez Awofeso | Graduate Software Engineer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem("portfolio-theme");
+      document.documentElement.setAttribute("data-theme", saved === "light" ? "light" : "dark");
+    })();
+  </script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <a href="#home">Afeez Awofeso</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <section id="home" class="intro-hero">
-      <div class="intro-hero-content">
-        <div class="intro-hero-left">
-          <h1 class="intro-hero-title">Hi, I'm <span class="intro-hero-name">Afeez Awofeso</span></h1>
-          <h2 class="intro-hero-subtitle">Computer Engineering Student &amp; software Developer</h2>
-          <p class="intro-hero-desc">Motivated third-year Computer Engineering student at the University of Greenwich, passionate about software development, problem-solving, and system design.</p>
-          <div class="intro-hero-buttons">
-            <a href="#projects" class="intro-btn intro-btn-primary">View My Work</a>
-            <a href="#contact" class="intro-btn intro-btn-outline">Get In Touch</a>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">Afeez Awofeso</a>
+
+      <div class="nav-right">
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch theme">
+            <span class="theme-icon theme-icon-light" aria-hidden="true">☀</span>
+            <span class="theme-icon theme-icon-dark" aria-hidden="true">☾</span>
+            <span class="theme-toggle-text">Light</span>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="home" class="hero section">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-label">London, United Kingdom</p>
+          <h1>Hi, I'm <span class="text-accent">Afeez Awofeso</span></h1>
+          <p class="hero-role">Graduate Software Engineer | AI &amp; Full-Stack Developer</p>
+          <p class="hero-text">
+            I recently completed my BEng in Computer Engineering at the University of Greenwich and I am awaiting my final grade, expecting <strong>First Class Honours</strong>. I enjoy building web applications, AI-powered tools and software systems that solve real-world problems.
+          </p>
+          <p class="hero-availability">
+            Open to <strong>graduate software engineering roles</strong> in London and remote: backend, full-stack, or AI-assisted products.
+          </p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="https://github.com/LordPizle" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/afeez-awofeso-662665324" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="CV.pdf" class="btn btn-secondary" download="Afeez-Awofeso-CV.pdf">Download CV</a>
           </div>
         </div>
-        <div class="intro-hero-right">
-          <div class="intro-avatar">
-            <svg width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#b0b0b0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="intro-avatar-icon"><circle cx="12" cy="8" r="4"/><path d="M6 20c0-2.2 3.6-4 6-4s6 1.8 6 4"/></svg>
-          </div>
+
+        <div class="hero-photo-wrap">
+          <a href="images/me-nobg.png" class="image-link hero-photo-link" aria-label="View profile photo">
+            <img src="images/me-nobg.png" alt="Afeez Awofeso" class="hero-photo" width="684" height="1024">
+          </a>
         </div>
       </div>
     </section>
-    <hr>
 
-    <section id="about" class="about-section">
-      <div class="about-container">
-        <h2 class="about-heading">About Me</h2>
-        <div class="about-description">
+    <!-- About -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
           <p>
-            I'm a passionate Computer Engineering student at the University of Greenwich, currently in my third year and on track for first-class honours. My journey in technology began with a curiosity for how things work, which has evolved into a deep passion for software development and system design.
+            I am a Computer Engineering graduate based in London with experience building full-stack web applications, AI-enhanced systems and embedded software projects. I have worked with Python, Flask, Django, JavaScript, HTML, CSS, SQL, Git, Linux, Arduino and Raspberry Pi.
           </p>
           <p>
-            When I'm not coding or studying, I work as a Team Leader at Claridge's Hotel in London, where I've developed strong leadership, problem-solving, and interpersonal skills. This experience has taught me the importance of collaboration, time management, and maintaining high standards in everything I do.
+            My strongest interests are software engineering, backend development, AI-powered web applications and building systems that are useful in real life. I have completed projects involving recommendation systems, healthcare software, care business websites, IoT dashboards and rover control systems.
+          </p>
+          <p>
+            Alongside my technical work, I work as a Team Leader Waiter at Claridge's, where I help manage service operations, coordinate with team members and maintain high service standards in a fast-paced luxury environment. This has strengthened my communication, teamwork, leadership and problem-solving skills.
           </p>
         </div>
       </div>
     </section>
-    <hr>
 
-    <section id="skills" class="skills-section">
-      <div class="skills-container">
-        <h2 class="skills-heading">Skills & Technologies</h2>
-        <div class="skills-list">
-          <div class="skill-group">
-            <h3 class="skill-group-title">Programming Languages</h3>
-            <ul>
-              <li class="skill-item">Kotlin (Android Development)</li>
-              <li class="skill-item">C (Intermediate)</li>
-              <li class="skill-item">Python (Intermediate)</li>
-              <li class="skill-item">C++ (Basic)</li>
-              <li class="skill-item">HTML &amp; CSS (Intermediate)</li>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-intro">Technologies and strengths I use across my projects.</p>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Languages</h3>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SQL</li>
+              <li>C</li>
+              <li>C++</li>
             </ul>
-          </div>
-          <div class="skill-group">
-            <h3 class="skill-group-title">Tools & Technologies</h3>
-            <ul>
-              <li class="skill-item">Android Studio</li>
-              <li class="skill-item">Flask (Python Web Framework)</li>
-              <li class="skill-item">GitHub &amp; Version Control</li>
-              <li class="skill-item">Git</li>
+          </article>
+
+          <article class="skill-card">
+            <h3>Frameworks and Tools</h3>
+            <ul class="tag-list">
+              <li>Flask</li>
+              <li>Django</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Linux</li>
+              <li>REST APIs</li>
+              <li>Vercel</li>
+              <li>Arduino</li>
+              <li>Raspberry Pi</li>
             </ul>
-          </div>
-          <div class="skill-group">
-            <h3 class="skill-group-title">Soft Skills</h3>
-            <ul>
-              <li class="skill-item">Problem-Solving &amp; Analytical Thinking</li>
-              <li class="skill-item">Team Collaboration &amp; Leadership</li>
-              <li class="skill-item">Strong Communication</li>
-              <li class="skill-item">Time Management</li>
+          </article>
+
+          <article class="skill-card">
+            <h3>AI and Data</h3>
+            <ul class="tag-list">
+              <li>TF-IDF</li>
+              <li>Cosine Similarity</li>
+              <li>Recommendation Systems</li>
+              <li>API Integration</li>
+              <li>Data Handling</li>
             </ul>
-          </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Soft Skills</h3>
+            <ul class="tag-list">
+              <li>Teamwork</li>
+              <li>Communication</li>
+              <li>Leadership</li>
+              <li>Problem Solving</li>
+              <li>Time Management</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
-    <hr>
 
-    <section id="projects" class="projects-section">
-      <div class="projects-container">
-        <h2 class="projects-heading">Projects</h2>
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-intro">Selected work focused on real problems, clear engineering, and practical outcomes.</p>
+
         <div class="projects-list">
-          <div class="project-card">
-            <h3 class="project-title">Personal Portfolio Website</h3>
-            <p class="project-desc"><strong>Description:</strong> A responsive website showcasing my skills, projects, and professional background with a modern design.</p>
-            <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, Responsive Web Design, GitHub Pages</p>
-          </div>
-          <div class="project-card">
-            <h3 class="project-title">Patient Management System</h3>
-            <p class="project-desc"><strong>Description:</strong> A full-stack web-based patient management system developed as part of a university group project. Provides healthcare staff with tools to record, manage, and retrieve patient observation data efficiently.</p>
-            <p class="project-tech"><strong>Technologies:</strong> Python, Flask, HTML, CSS, GitHub</p>
-          </div>
-          <div class="project-card">
-            <h3 class="project-title">Healthy Recipe App</h3>
-            <p class="project-desc"><strong>Description:</strong> An intuitive Android app providing users with a curated list of healthy recipes through API integration and a responsive UI.</p>
-            <p class="project-tech"><strong>Technologies:</strong> Kotlin, Android Studio, API Integration</p>
-          </div>
-          <div class="project-card">
-            <h3 class="project-title">Concert Ticket Booking App</h3>
-            <p class="project-desc"><strong>Description:</strong> An Android application enabling users to book concert tickets with real-time seat availability and secure payment handling.</p>
-            <p class="project-tech"><strong>Technologies:</strong> Kotlin, Android Studio, Real-time Data Handling</p>
-          </div>
-          <div class="project-card">
-            <h3 class="project-title">Mass Converter App</h3>
-            <p class="project-desc"><strong>Description:</strong> A unit conversion Android app designed for quick and accurate mass unit conversions. Demonstrates strong problem-solving and UI design skills.</p>
-            <p class="project-tech"><strong>Technologies:</strong> Kotlin, Android Studio, Unit Conversion Algorithms</p>
-          </div>
+
+          <!-- Dishcovery -->
+          <article class="project-card project-featured">
+            <div class="project-preview project-preview-screenshots">
+              <a href="images/projects/dishcovery/home.png" class="image-link" aria-label="View Dishcovery homepage">
+                <img src="images/projects/dishcovery/home.png" alt="Dishcovery homepage" class="project-preview-img">
+              </a>
+              <a href="images/projects/dishcovery/search.png" class="image-link" aria-label="View Dishcovery search page">
+                <img src="images/projects/dishcovery/search.png" alt="Dishcovery search page" class="project-preview-img">
+              </a>
+              <a href="images/projects/dishcovery/results.png" class="image-link" aria-label="View Dishcovery results page">
+                <img src="images/projects/dishcovery/results.png" alt="Dishcovery restaurant results" class="project-preview-img">
+              </a>
+            </div>
+            <div class="project-header">
+              <h3>Dishcovery</h3>
+              <p class="project-subtitle">AI Restaurant Discovery Web App</p>
+            </div>
+            <p class="project-desc">
+              Dishcovery is an AI-enhanced restaurant discovery web application designed to help users find restaurants that better match what they actually want to eat. Instead of only relying on basic keyword search, the app uses TF-IDF and cosine similarity to improve how restaurant results are ranked.
+            </p>
+            <p class="project-outcome">Testing showed TF-IDF ranking returned more relevant restaurants than keyword-only search across varied meal queries.</p>
+            <p class="project-label">Problem solved</p>
+            <p class="project-text">Restaurant search results can often feel too broad, irrelevant or difficult to compare. Dishcovery improves this by matching the user's search query more closely with restaurant information.</p>
+            <p class="project-label">Key features</p>
+            <ul class="project-features">
+              <li>AI-enhanced restaurant ranking</li>
+              <li>TF-IDF and cosine similarity recommendation logic</li>
+              <li>Google Places API integration for live restaurant data</li>
+              <li>Photon geocoding for location search</li>
+            </ul>
+            <div class="project-more" id="project-more-dishcovery" hidden>
+              <ul class="project-features">
+                <li>Haversine distance calculation for nearby results</li>
+                <li>Filters such as open now and minimum rating</li>
+                <li>Sorting by distance, rating and best match</li>
+                <li>Clean responsive user interface</li>
+                <li>Rule-based assistant for user guidance</li>
+              </ul>
+              <p class="project-label">My contribution</p>
+              <p class="project-text">Built the full-stack application, connected APIs, implemented the recommendation logic, designed the frontend and tested the system against keyword-only search.</p>
+            </div>
+            <button type="button" class="project-read-more" aria-expanded="false" aria-controls="project-more-dishcovery" data-read-more>Read more</button>
+            <div class="tech-tags">
+              <span>Python</span><span>Flask</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+              <span>Google Places API</span><span>Photon Geocoding</span><span>TF-IDF</span><span>Cosine Similarity</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/LordPizle/Dishcovery" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <!-- Dover Rover -->
+          <article class="project-card">
+            <div class="project-preview project-preview-photos">
+              <a href="images/projects/dover-rover/arduino-car.png" class="image-link" aria-label="View Arduino rover prototype">
+                <img src="images/projects/dover-rover/arduino-car.png" alt="Arduino prototype with red wheels" class="project-preview-img preview-focus-center">
+              </a>
+              <a href="images/projects/dover-rover/rover-front.png" class="image-link" aria-label="View Dover Rover front with sensors">
+                <img src="images/projects/dover-rover/rover-front.png" alt="Blue rover with sensors and camera" class="project-preview-img preview-focus-center">
+              </a>
+              <a href="images/projects/dover-rover/team-rover.png" class="image-link" aria-label="View team with Dover Rover">
+                <img src="images/projects/dover-rover/team-rover.png" alt="Team member holding the Dover Rover" class="project-preview-img preview-focus-top">
+              </a>
+            </div>
+            <div class="project-header">
+              <h3>Dover Rover</h3>
+              <p class="project-subtitle">Rover Web Dashboard and Embedded Systems Project</p>
+            </div>
+            <p class="project-desc">
+              Dover Rover is a group engineering project involving a rover controlled through a web dashboard. The system connects software, hardware and sensors to allow remote control, telemetry display and obstacle detection.
+            </p>
+            <p class="project-outcome">Delivered a working link between a Flask web dashboard and on-board hardware, with live telemetry and obstacle detection during demos.</p>
+            <p class="project-label">Problem solved</p>
+            <p class="project-text">The project explored how software can control and monitor a physical robotic system in real time using web technologies and embedded hardware.</p>
+            <p class="project-label">Key features</p>
+            <ul class="project-features">
+              <li>Web-based rover control dashboard</li>
+              <li>Raspberry Pi and Arduino communication</li>
+              <li>Ultrasonic sensor obstacle detection</li>
+              <li>Real-time telemetry display</li>
+            </ul>
+            <div class="project-more" id="project-more-dover" hidden>
+              <ul class="project-features">
+                <li>Camera/video streaming</li>
+                <li>Motor control integration</li>
+                <li>Serial communication between hardware components</li>
+                <li>System testing and debugging</li>
+              </ul>
+              <p class="project-label">My contribution</p>
+              <p class="project-text">Focused on the software side, web dashboard, system integration, testing and debugging. I helped connect the rover's hardware behaviour with the user-facing control interface.</p>
+            </div>
+            <button type="button" class="project-read-more" aria-expanded="false" aria-controls="project-more-dover" data-read-more>Read more</button>
+            <div class="tech-tags">
+              <span>Python</span><span>Flask</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+              <span>Raspberry Pi</span><span>Arduino</span><span>OpenCV</span><span>YOLOv8</span><span>Serial Communication</span>
+            </div>
+            <div class="project-links">
+              <span class="project-repo-note">University group project, repository private</span>
+              <a href="mailto:opemipoawofeso@gmail.com?subject=Dover%20Rover%20project%20code" class="btn btn-small btn-secondary">Request code</a>
+            </div>
+          </article>
+
+          <!-- Patient Observation -->
+          <article class="project-card">
+            <div class="project-preview project-preview-screenshots">
+              <a href="images/projects/patient-observation/dashboard.png" class="image-link" aria-label="View Patient Observation dashboard">
+                <img src="images/projects/patient-observation/dashboard.png" alt="Patient Observation dashboard with stats and recent activity" class="project-preview-img">
+              </a>
+              <a href="images/projects/patient-observation/patients.png" class="image-link" aria-label="View Patient Observation patients list">
+                <img src="images/projects/patient-observation/patients.png" alt="Patient Observation all patients list with filters" class="project-preview-img">
+              </a>
+              <a href="images/projects/patient-observation/notifications.png" class="image-link" aria-label="View Patient Observation notifications">
+                <img src="images/projects/patient-observation/notifications.png" alt="Patient Observation notifications page" class="project-preview-img">
+              </a>
+            </div>
+            <div class="project-header">
+              <h3>Patient Observation System</h3>
+              <p class="project-subtitle">Healthcare Staff Web Application</p>
+            </div>
+            <p class="project-desc">
+              A secure, staff-facing web application for healthcare teams to register patients, track condition status, log vital-sign observations over time, and review activity from a central dashboard. Built as a single Flask server serving HTML pages with a custom green-and-white interface.
+            </p>
+            <p class="project-outcome">End-to-end Flask app with auth, patient and observation CRUD, dashboard analytics, and in-app notifications in one deployable codebase.</p>
+            <p class="project-label">Problem solved</p>
+            <p class="project-text">Manual or scattered patient observation records are hard to search, update and review. This system gives staff one place to manage patients, record clinical observations and see recent activity with in-app notifications.</p>
+            <p class="project-label">Key features</p>
+            <ul class="project-features">
+              <li>Secure authentication with sign up, sign in and password reset</li>
+              <li>Staff and admin roles with session-based access control</li>
+              <li>Full patient management with filter, sort, profile and cascade delete</li>
+              <li>Observation tracking for vitals (BP, heart rate, temperature, SpO2, and more)</li>
+            </ul>
+            <div class="project-more" id="project-more-patient" hidden>
+              <ul class="project-features">
+                <li>Dashboard with live search, stat cards and condition breakdown chart</li>
+                <li>In-app notifications with unread badges and mark-as-read</li>
+                <li>Profile management and JSON API endpoints for search and stats</li>
+                <li>Dark mode toggle and responsive custom CSS layout</li>
+                <li>SQLite database with User, Patient, Observation and Notification models</li>
+              </ul>
+              <p class="project-label">My contribution</p>
+              <p class="project-text">Designed and rebuilt the full application: Flask backend, SQLite data models, authentication flow, patient and observation CRUD, dashboard with stats and charts, notification system, API routes, and the complete frontend using HTML, Jinja2, CSS and JavaScript.</p>
+            </div>
+            <button type="button" class="project-read-more" aria-expanded="false" aria-controls="project-more-patient" data-read-more>Read more</button>
+            <div class="tech-tags">
+              <span>Python</span><span>Flask</span><span>Jinja2</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQLite</span>
+            </div>
+            <div class="project-links">
+              <span class="project-repo-note">Repository not public yet</span>
+              <a href="mailto:opemipoawofeso@gmail.com?subject=Patient%20Observation%20System%20code" class="btn btn-small btn-secondary">Request code</a>
+            </div>
+          </article>
+
+          <!-- RAA Care -->
+          <article class="project-card">
+            <div class="project-preview project-preview-screenshots">
+              <a href="images/projects/raa-care/home.png" class="image-link" aria-label="View RAA Care homepage">
+                <img src="images/projects/raa-care/home.png" alt="RAA Care homepage" class="project-preview-img">
+              </a>
+              <a href="images/projects/raa-care/services.png" class="image-link" aria-label="View RAA Care services section">
+                <img src="images/projects/raa-care/services.png" alt="RAA Care services section" class="project-preview-img">
+              </a>
+              <a href="images/projects/raa-care/about.png" class="image-link" aria-label="View RAA Care about section">
+                <img src="images/projects/raa-care/about.png" alt="RAA Care about section" class="project-preview-img">
+              </a>
+            </div>
+            <div class="project-header">
+              <h3>RAA Care</h3>
+              <p class="project-subtitle">Care and Recruitment Website</p>
+            </div>
+            <p class="project-desc">
+              RAA Care is a professional website for a care and recruitment business. The website presents the company's services clearly and gives users a simple way to learn about care support, recruitment and contact options.
+            </p>
+            <p class="project-outcome">Production-style care business site with clear service pages and a contact flow, built as a static multi-section frontend.</p>
+            <p class="project-label">Problem solved</p>
+            <p class="project-text">The business needed a clean online presence that explained its services, built trust and made it easier for visitors to contact the company.</p>
+            <p class="project-label">Key features</p>
+            <ul class="project-features">
+              <li>Professional business website</li>
+              <li>Home, About, Services and Contact sections/pages</li>
+              <li>Care service information</li>
+              <li>Recruitment-focused content</li>
+            </ul>
+            <div class="project-more" id="project-more-raa" hidden>
+              <ul class="project-features">
+                <li>Responsive layout</li>
+                <li>Clear navigation</li>
+                <li>Contact/enquiry section</li>
+                <li>Clean design suitable for a healthcare/care business</li>
+              </ul>
+              <p class="project-label">My contribution</p>
+              <p class="project-text">Built the frontend using HTML, CSS and JavaScript. Focused on structure, layout, responsive design and making the website easy for visitors to understand.</p>
+            </div>
+            <button type="button" class="project-read-more" aria-expanded="false" aria-controls="project-more-raa" data-read-more>Read more</button>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/LordPizle/RAA_Care" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <!-- GlamKit -->
+          <article class="project-card">
+            <div class="project-preview project-preview-screenshots">
+              <a href="images/projects/glamkit/home.png" class="image-link" aria-label="View GlamKit homepage">
+                <img src="images/projects/glamkit/home.png" alt="GlamKit homepage" class="project-preview-img">
+              </a>
+              <a href="images/projects/glamkit/testimonials.png" class="image-link" aria-label="View GlamKit testimonials section">
+                <img src="images/projects/glamkit/testimonials.png" alt="GlamKit testimonials section" class="project-preview-img">
+              </a>
+              <a href="images/projects/glamkit/contact.png" class="image-link" aria-label="View GlamKit contact section">
+                <img src="images/projects/glamkit/contact.png" alt="GlamKit contact section" class="project-preview-img">
+              </a>
+            </div>
+            <div class="project-header">
+              <h3>GlamKit</h3>
+              <p class="project-subtitle">Beauty and Fashion Landing Page</p>
+            </div>
+            <p class="project-desc">
+              GlamKit is a beauty and fashion-themed landing page built to practise clean frontend design, styling and layout. The project focuses on visual presentation, spacing, typography and responsive page structure.
+            </p>
+            <p class="project-outcome">Polished landing page demonstrating layout, typography, and responsive CSS without a framework.</p>
+            <p class="project-label">Problem solved</p>
+            <p class="project-text">This project demonstrates my ability to create a clean and attractive static frontend layout using only HTML and CSS.</p>
+            <p class="project-label">Key features</p>
+            <ul class="project-features">
+              <li>Beauty/fashion landing page</li>
+              <li>Clean visual layout</li>
+              <li>Product or brand-style presentation</li>
+              <li>Responsive structure</li>
+            </ul>
+            <div class="project-more" id="project-more-glamkit" hidden>
+              <ul class="project-features">
+                <li>CSS styling and spacing</li>
+                <li>Simple frontend design</li>
+              </ul>
+              <p class="project-label">My contribution</p>
+              <p class="project-text">Designed and built the page using HTML and CSS, focusing on layout, styling and visual polish.</p>
+            </div>
+            <button type="button" class="project-read-more" aria-expanded="false" aria-controls="project-more-glamkit" data-read-more>Read more</button>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/LordPizle/Glam-Kit" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
-    <hr>
-    <section id="contact" class="contact-section">
-      <div class="contact-container">
-        <h3 class="contact-subheading">Get In Touch</h3>
-        <p class="contact-description">I'm always interested in new opportunities and exciting projects!</p>
-        
-        <div class="contact-info">
-          <h3>Contact Information:</h3>
-          <p><strong>Email:</strong> opemipoawofeso@gmail.com</p>
-          <p><strong>Phone:</strong> +44 7449 205537</p>
-          <p><strong>Location:</strong> London, UK</p>
-        </div>
-        
-        <div class="contact-links">
-          <h3>My Links:</h3>
-          <p><strong>GitHub:</strong> <a href="https://github.com/LordPizle">github.com/LordPizle</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/afeez-awofeso-662665324">linkedin.com/in/afeez-awofeso-662665324</a></p>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>Claridge's, Team Leader Waiter</h3>
+            <p>
+              I help manage day-to-day service operations in a fast-paced luxury hotel environment. I coordinate with team members, support smooth service delivery and help maintain high customer service standards. This role has improved my leadership, communication, teamwork and ability to stay calm under pressure.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Lektaw Ventures, IT / Technical Support</h3>
+            <p>
+              I supported basic IT and technical operations, helped with software and hardware troubleshooting and assisted with day-to-day technical tasks. This role helped me improve my problem-solving, communication and practical technical support skills.
+            </p>
+          </article>
         </div>
       </div>
     </section>
+
+    <!-- Education -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <article class="education-card">
+          <h3>University of Greenwich</h3>
+          <p class="education-degree">BEng Computer Engineering</p>
+          <div class="education-badges">
+            <span class="badge">Recently completed</span>
+            <span class="badge badge-accent">Expected First Class Honours</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-cta">
+          I am open to <strong>graduate software engineering roles</strong>, internships and opportunities to grow as a developer. Feel free to get in touch.
+        </p>
+
+        <div class="contact-grid">
+          <a href="mailto:opemipoawofeso@gmail.com" class="contact-card">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">opemipoawofeso@gmail.com</span>
+          </a>
+          <a href="https://github.com/LordPizle" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/LordPizle</span>
+          </a>
+          <a href="https://www.linkedin.com/in/afeez-awofeso-662665324" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">afeez-awofeso</span>
+          </a>
+        </div>
+
+        <div class="btn-group contact-buttons">
+          <a href="mailto:opemipoawofeso@gmail.com" class="btn btn-primary">Send Email</a>
+          <a href="CV.pdf" class="btn btn-secondary" download="Afeez-Awofeso-CV.pdf">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Afeez Awofeso. All rights reserved.</p>
+      <p class="footer-location">London, United Kingdom</p>
+    </div>
+  </footer>
+
+  <div id="image-lightbox" class="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close image">&times;</button>
+    <img class="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
