@@ -363,13 +363,14 @@ strong {
   margin-inline: auto;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid var(--card-border);
-  box-shadow: var(--shadow);
+  border: 3px solid rgba(37, 99, 235, 0.45);
+  box-shadow: var(--shadow), 0 0 0 1px rgba(59, 130, 246, 0.15);
   background: linear-gradient(160deg, #1e293b 0%, #2563eb 45%, #1e3a8a 100%);
 }
 
 [data-theme="light"] .hero-photo-wrap {
   background: linear-gradient(160deg, #dbeafe 0%, #60a5fa 45%, #2563eb 100%);
+  border-color: rgba(37, 99, 235, 0.35);
 }
 
 .hero-photo {
@@ -378,9 +379,9 @@ strong {
   display: block;
   width: 132%;
   height: 132%;
-  object-fit: contain;
-  object-position: center center;
-  transform: translateY(10%);
+  object-fit: cover;
+  object-position: 58% 26%;
+  transform: none;
 }
 
 .hero-label {
