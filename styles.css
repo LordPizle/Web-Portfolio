@@ -601,6 +601,10 @@ strong {
   margin-bottom: 0.35rem;
 }
 
+.project-header + .project-label {
+  margin-top: 0.15rem;
+}
+
 .project-text {
   color: var(--text-muted);
   font-size: 0.95rem;
@@ -641,7 +645,8 @@ strong {
   background: var(--accent-soft);
   border-left: 3px solid var(--accent);
   padding: 0.65rem 0.85rem;
-  margin-bottom: 1rem;
+  margin-top: 0.15rem;
+  margin-bottom: 0.85rem;
   border-radius: 0 8px 8px 0;
 }
 

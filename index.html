@@ -72,12 +72,6 @@
           <p class="hero-label">London, United Kingdom</p>
           <h1>Hi, I'm <span class="text-accent">Afeez Awofeso</span></h1>
           <p class="hero-role">Graduate Software Engineer | AI &amp; Full-Stack Developer</p>
-          <p class="hero-text">
-            I graduated with <strong>First Class Honours</strong> in BEng Computer Engineering at the University of Greenwich. I enjoy building web applications, AI-powered tools and software systems that solve real-world problems.
-          </p>
-          <p class="hero-availability">
-            Open to <strong>graduate software engineering roles</strong> in London and remote: backend, full-stack, or AI-assisted products.
-          </p>
           <div class="btn-group">
             <a href="#projects" class="btn btn-primary">View Projects</a>
             <a href="https://github.com/LordPizle" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -197,10 +191,11 @@
               <h3>Dishcovery</h3>
               <p class="project-subtitle">AI Restaurant Discovery Web App</p>
             </div>
+            <p class="project-label">Result</p>
+            <p class="project-outcome">Side-by-side testing showed TF-IDF and cosine similarity ranked live Google Places results more relevant than keyword-only search across varied meal queries, with 3 extra ranking modes: distance, rating and best match.</p>
             <p class="project-desc">
               Dishcovery is an AI-enhanced restaurant discovery web application designed to help users find restaurants that better match what they actually want to eat. Instead of only relying on basic keyword search, the app uses TF-IDF and cosine similarity to improve how restaurant results are ranked.
             </p>
-            <p class="project-outcome">Testing showed TF-IDF ranking returned more relevant restaurants than keyword-only search across varied meal queries.</p>
             <p class="project-label">Problem solved</p>
             <p class="project-text">Restaurant search results can often feel too broad, irrelevant or difficult to compare. Dishcovery improves this by matching the user's search query more closely with restaurant information.</p>
             <p class="project-label">Key features</p>
@@ -248,10 +243,11 @@
               <h3>Dover Rover</h3>
               <p class="project-subtitle">Rover Web Dashboard and Embedded Systems Project</p>
             </div>
+            <p class="project-label">Result</p>
+            <p class="project-outcome">Got a Flask dashboard talking to Raspberry Pi and Arduino in real time, with live telemetry, camera streaming, motor control and ultrasonic obstacle detection shown in working demos.</p>
             <p class="project-desc">
               Dover Rover is a group engineering project involving a rover controlled through a web dashboard. The system connects software, hardware and sensors to allow remote control, telemetry display and obstacle detection.
             </p>
-            <p class="project-outcome">Delivered a working link between a Flask web dashboard and on-board hardware, with live telemetry and obstacle detection during demos.</p>
             <p class="project-label">Problem solved</p>
             <p class="project-text">The project explored how software can control and monitor a physical robotic system in real time using web technologies and embedded hardware.</p>
             <p class="project-label">Key features</p>
@@ -282,6 +278,57 @@
             </div>
           </article>
 
+          <!-- RAA Care -->
+          <article class="project-card">
+            <div class="project-preview project-preview-screenshots">
+              <a href="images/projects/raa-care/home.png" class="image-link" aria-label="View RAA Care homepage">
+                <img src="images/projects/raa-care/home.png" alt="RAA Care homepage" class="project-preview-img">
+              </a>
+              <a href="images/projects/raa-care/services.png" class="image-link" aria-label="View RAA Care services section">
+                <img src="images/projects/raa-care/services.png" alt="RAA Care services section" class="project-preview-img">
+              </a>
+              <a href="images/projects/raa-care/about.png" class="image-link" aria-label="View RAA Care about section">
+                <img src="images/projects/raa-care/about.png" alt="RAA Care about section" class="project-preview-img">
+              </a>
+            </div>
+            <div class="project-header">
+              <h3>RAA Care</h3>
+              <p class="project-subtitle">Care and Recruitment Website</p>
+            </div>
+            <p class="project-label">Result</p>
+            <p class="project-outcome">Shipped a live 5-page site for RAA Home Support &amp; Recruitment covering Home, Services, About, Request Staff and Contact, now used by a real care business.</p>
+            <p class="project-desc">
+              RAA Care is a professional website for a care and recruitment business. The website presents the company's services clearly and gives users a simple way to learn about care support, recruitment and contact options.
+            </p>
+            <p class="project-label">Problem solved</p>
+            <p class="project-text">The business needed a clean online presence that explained its services, built trust and made it easier for visitors to contact the company.</p>
+            <p class="project-label">Key features</p>
+            <ul class="project-features">
+              <li>Professional business website</li>
+              <li>Home, About, Services and Contact sections/pages</li>
+              <li>Care service information</li>
+              <li>Recruitment-focused content</li>
+            </ul>
+            <div class="project-more" id="project-more-raa" hidden>
+              <ul class="project-features">
+                <li>Responsive layout</li>
+                <li>Clear navigation</li>
+                <li>Contact/enquiry section</li>
+                <li>Clean design suitable for a healthcare/care business</li>
+              </ul>
+              <p class="project-label">My contribution</p>
+              <p class="project-text">Built the frontend using HTML, CSS and JavaScript. Focused on structure, layout, responsive design and making the website easy for visitors to understand.</p>
+            </div>
+            <button type="button" class="project-read-more" aria-expanded="false" aria-controls="project-more-raa" data-read-more>Read more</button>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://raahomesupportandrecruitment.co.uk/" class="btn btn-small" target="_blank" rel="noopener noreferrer">Live site</a>
+              <a href="https://github.com/LordPizle/RAA_Care" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
           <!-- Patient Observation -->
           <article class="project-card">
             <div class="project-preview project-preview-screenshots">
@@ -299,10 +346,11 @@
               <h3>Patient Observation System</h3>
               <p class="project-subtitle">Healthcare Staff Web Application</p>
             </div>
+            <p class="project-label">Result</p>
+            <p class="project-outcome">Built one Flask app covering auth, 7 vital types, 4 database models, dashboard stats and in-app notifications, so staff can register patients, log observations and review activity in one place instead of scattered records.</p>
             <p class="project-desc">
               A secure, staff-facing web application for healthcare teams to register patients, track condition status, log vital-sign observations over time, and review activity from a central dashboard. Built as a single Flask server serving HTML pages with a custom green-and-white interface.
             </p>
-            <p class="project-outcome">End-to-end Flask app with auth, patient and observation CRUD, dashboard analytics, and in-app notifications in one deployable codebase.</p>
             <p class="project-label">Problem solved</p>
             <p class="project-text">Manual or scattered patient observation records are hard to search, update and review. This system gives staff one place to manage patients, record clinical observations and see recent activity with in-app notifications.</p>
             <p class="project-label">Key features</p>
@@ -333,55 +381,6 @@
             </div>
           </article>
 
-          <!-- RAA Care -->
-          <article class="project-card">
-            <div class="project-preview project-preview-screenshots">
-              <a href="images/projects/raa-care/home.png" class="image-link" aria-label="View RAA Care homepage">
-                <img src="images/projects/raa-care/home.png" alt="RAA Care homepage" class="project-preview-img">
-              </a>
-              <a href="images/projects/raa-care/services.png" class="image-link" aria-label="View RAA Care services section">
-                <img src="images/projects/raa-care/services.png" alt="RAA Care services section" class="project-preview-img">
-              </a>
-              <a href="images/projects/raa-care/about.png" class="image-link" aria-label="View RAA Care about section">
-                <img src="images/projects/raa-care/about.png" alt="RAA Care about section" class="project-preview-img">
-              </a>
-            </div>
-            <div class="project-header">
-              <h3>RAA Care</h3>
-              <p class="project-subtitle">Care and Recruitment Website</p>
-            </div>
-            <p class="project-desc">
-              RAA Care is a professional website for a care and recruitment business. The website presents the company's services clearly and gives users a simple way to learn about care support, recruitment and contact options.
-            </p>
-            <p class="project-outcome">Production-style care business site with clear service pages and a contact flow, built as a static multi-section frontend.</p>
-            <p class="project-label">Problem solved</p>
-            <p class="project-text">The business needed a clean online presence that explained its services, built trust and made it easier for visitors to contact the company.</p>
-            <p class="project-label">Key features</p>
-            <ul class="project-features">
-              <li>Professional business website</li>
-              <li>Home, About, Services and Contact sections/pages</li>
-              <li>Care service information</li>
-              <li>Recruitment-focused content</li>
-            </ul>
-            <div class="project-more" id="project-more-raa" hidden>
-              <ul class="project-features">
-                <li>Responsive layout</li>
-                <li>Clear navigation</li>
-                <li>Contact/enquiry section</li>
-                <li>Clean design suitable for a healthcare/care business</li>
-              </ul>
-              <p class="project-label">My contribution</p>
-              <p class="project-text">Built the frontend using HTML, CSS and JavaScript. Focused on structure, layout, responsive design and making the website easy for visitors to understand.</p>
-            </div>
-            <button type="button" class="project-read-more" aria-expanded="false" aria-controls="project-more-raa" data-read-more>Read more</button>
-            <div class="tech-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/LordPizle/RAA_Care" class="btn btn-small" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </article>
-
           <!-- GlamKit -->
           <article class="project-card">
             <div class="project-preview project-preview-screenshots">
@@ -399,10 +398,11 @@
               <h3>GlamKit</h3>
               <p class="project-subtitle">Beauty and Fashion Landing Page</p>
             </div>
+            <p class="project-label">Result</p>
+            <p class="project-outcome">Built a fully responsive landing page in HTML and CSS only, with separate Home, Testimonials and Contact sections and no UI framework.</p>
             <p class="project-desc">
               GlamKit is a beauty and fashion-themed landing page built to practise clean frontend design, styling and layout. The project focuses on visual presentation, spacing, typography and responsive page structure.
             </p>
-            <p class="project-outcome">Polished landing page demonstrating layout, typography, and responsive CSS without a framework.</p>
             <p class="project-label">Problem solved</p>
             <p class="project-text">This project demonstrates my ability to create a clean and attractive static frontend layout using only HTML and CSS.</p>
             <p class="project-label">Key features</p>
